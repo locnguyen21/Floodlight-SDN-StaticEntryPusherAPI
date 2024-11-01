@@ -14,3 +14,4 @@
 ![example](https://github.com/user-attachments/assets/1b84233a-7a0d-41d5-bc1e-06c830a9a71f)
 5. File chính chạy chương trình: [entrypusher.py](https://github.com/locnguyen21/Floodlight-SDN-StaticEntryPusherAPI/blob/main/entrypusher.py)
 6. Video hướng dẫn cài đặt Mininet để mô phỏng mạng topology: https://www.youtube.com/watch?v=QgGuqJ4bxHw&feature=youtu.be
+7. Lệnh chạy trên mininet và Floodlight: https://github.com/locnguyen21/Floodlight-SDN-StaticEntryPusherAPI/blob/main/Mininet-Floodlight.txt
