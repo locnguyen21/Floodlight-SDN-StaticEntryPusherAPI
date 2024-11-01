@@ -1,0 +1,8 @@
+#Chay Mininet
+sudo -E ~/mininet/examples/miniedit.py
+
+#Chay floodlight
+sudo java -jar target/floodlight.jar
+
+#Check hoat dong cua flow entries bang cach dump tren switch
+sudo ovs-ofctl -O OpenFlow13 dump-flows s1 

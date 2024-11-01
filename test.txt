@@ -1,0 +1,119 @@
+# #tren switch s1
+# flow1 = {
+#     'switch':"00:00:00:00:00:00:00:01",
+#     "name":"flow_h1-to-s2-via-s1",
+#     "cookie":"0",
+#     "priority":"32768",
+#     #"in_port":"1",
+#     "active":"true",
+#     "actions":"output=1"
+#     }
+# #tren switch s2
+# flow2 = {
+#     'switch':"00:00:00:00:00:00:00:02",
+#     "name":"flow_h1-to-s2-via-s1-s2",
+#     "cookie":"0",
+#     "priority":"32768",
+#     "in_port":"1", #in port ket noi voi h1 
+#     "active":"true",
+#     "actions":"output=2"
+#     }
+# #tren switch s3
+# flow3 = {
+#     'switch':"00:00:00:00:00:00:00:03",
+#     "name":"flow_h1-to-s2-via-s1-s2-s3",
+#     "cookie":"0",
+#     "priority":"32768",
+#     "in_port":"1", #ket noi toi h6
+#     "active":"true",
+#     "actions":"output=2"
+#     }
+# #reverse 
+# flow4 = {
+#     'switch':"00:00:00:00:00:00:00:04",
+#     "name":"flow_h2-h1-s4",
+#     "cookie":"0",
+#     "priority":"32757",
+#     #"in_port":"2", #ket noi toi tra ve host sw1
+#     "active":"true",
+#     "actions":"output=2"
+#     }
+# flow5 = {
+#     'switch':"00:00:00:00:00:00:00:01",
+#     "name":"flow_h2-h1-s4-s1",
+#     "cookie":"0",
+#     "priority":"32757",
+#     "in_port":"2", #ket noi toi tra ve host sw1
+#     "active":"true",
+#     "actions":"output=301"
+#     }
+# # pusher.set(flow1)
+# # pusher.set(flow2)
+# # pusher.set(flow3)
+# # pusher.set(flow4)
+# # pusher.set(flow5)
+
+# #again h1 to h2 from s1 to s4
+# flow1 = {
+#     'switch':"00:00:00:00:00:00:00:05",
+#     "name":"flow_h1-to-h3-s5",
+#     "cookie":"0",
+#     "priority":"1997",
+#     "in_port":"5",
+#     "active":"true",
+#     "actions":"output=2"
+#     }
+# flow2 = {
+#     'switch':"00:00:00:00:00:00:00:02",
+#     "name":"flow_h1-to-h3-s5-s2",
+#     "cookie":"0",
+#     "priority":"1997",
+#     "in_port":"1",
+#     "active":"true",
+#     "actions":"output=3"
+#     }
+
+# flow3 = {
+#     'switch':"00:00:00:00:00:00:00:07",
+#     "name":"flow_h1-to-h3-s5-s2-s7",
+#     "cookie":"0",
+#     "priority":"1997",
+#     "in_port":"2", #in port ket noi voi h1 
+#     "active":"true",
+#     "actions":"output=5"
+#     }
+
+# #chieu ve
+# flow4 = {
+#     'switch':"00:00:00:00:00:00:00:07",
+#     "name":"flow_h3-to-h1-s7",
+#     "cookie":"0",
+#     "priority":"1999",
+#     "in_port":"5", #in port ket noi voi h1 
+#     "active":"true",
+#     "actions":"output=2"
+#     }
+# flow5 = {
+#     'switch':"00:00:00:00:00:00:00:02",
+#     "name":"flow_h3-to-h1-s7-s2",
+#     "cookie":"0",
+#     "priority":"1999",
+#     "in_port":"3", #in port ket noi voi h1 
+#     "active":"true",
+#     "actions":"output=1"
+#     }
+# flow6 = {
+#     'switch':"00:00:00:00:00:00:00:05",
+#     "name":"flow_h3-to-h1-s7-s2-s5",
+#     "cookie":"0",
+#     "priority":"1999",
+#     "in_port":"2", #in port ket noi voi h1 
+#     "active":"true",
+#     "actions":"output=5"
+#     }
+# pusher.set(flow1)
+# pusher.set(flow2)
+# pusher.set(flow3)
+# pusher.set(flow4)
+# pusher.set(flow5)
+# pusher.set(flow6)
